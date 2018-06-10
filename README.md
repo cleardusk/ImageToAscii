@@ -28,6 +28,7 @@ python img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 </p>
 
 <p align="center">
+<<<<<<< HEAD
     <img src="imgs/chijing_screen.jpg", width="800px">
 </p>
 
