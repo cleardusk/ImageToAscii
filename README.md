@@ -3,6 +3,14 @@ This is a simple, light and optimized image-to-ascii converter. I implement it f
 
 ## Usage
 
+`-f | --file` is input image path.
+
+`-s | --scale` controls the output size.
+
+`-a | --aspect` controls the aspect of height and width.
+
+`-w | --write-file` is the output ascii txt path.
+
 ```
 # lazy style: the default output is ${img_file}.txt
 python img_to_sacii.py -f imgs/erke.jpg
@@ -22,7 +30,6 @@ python img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 <p align="center">
     <img src="imgs/chijing_screen.jpg", width="800px">
 </p>
-
 
 <p align="center">
     <img src="imgs/erke_screen.jpg", width="800px">
