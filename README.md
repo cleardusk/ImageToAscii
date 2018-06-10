@@ -20,6 +20,11 @@ python img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 </p>
 
 <p align="center">
+    <img src="imgs/chijing_screen.jpg", width="800px">
+</p>
+
+
+<p align="center">
     <img src="imgs/erke_screen.jpg", width="800px">
 </p>
 
