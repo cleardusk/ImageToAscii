@@ -5,16 +5,20 @@ This is a simple, light and optimized image-to-ascii converter. I implement it f
 
 ```
 # lazy style: the default output is ${img_file}.txt
-python ./img_to_sacii.py -f imgs/erke.jpg
+python img_to_sacii.py -f imgs/erke.jpg
 
 # adjust sampling step, the output is larger if it is samller
-python ./img_to_sacii.py -f imgs/erke.jpg -s 2
+python img_to_sacii.py -f imgs/erke.jpg -s 2
 
 # complete style
-python ./img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
+python img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 ```
 
 ## Samples
 <p align="center">
-    <img src="imgs/kenan_screen.jpg", width="600px">
+    <img src="imgs/kenan_screen.jpg", width="960px">
 </p>
+
+## Notes
+You can adjust the font size of text editor for better view.
+
