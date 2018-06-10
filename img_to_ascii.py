@@ -47,7 +47,7 @@ def _convert_img_to_ascii(img, sampling_step='auto', aspect=2, norm_style='mean'
     dst_height, dst_width = int(src_height / sampling_step / aspect), int(src_width / sampling_step)
 
     indices = np.zeros((dst_height, dst_width), dtype=np.float32)
-    step_h, step_w = sampling_step * aspect, sampling_step
+    step_h, step_w = int(sampling_step * aspect), sampling_step
     for j in range(step_h):
         for k in range(step_w):
             indices += img[j:j + step_h * dst_height:step_h, k:k + step_w * dst_width: step_w]
@@ -58,7 +58,7 @@ def _convert_img_to_ascii(img, sampling_step='auto', aspect=2, norm_style='mean'
 
 def convert_img_to_ascii(args):
     img = cv2.imread(args.file, cv2.IMREAD_UNCHANGED)
-    ascii = _convert_img_to_ascii(img, sampling_step=args.sampling_step)
+    ascii = _convert_img_to_ascii(img, sampling_step=args.sampling_step, aspect=args.aspect)
     if args.write_file in ['', None]:
         args.write_file = args.file.replace('.jpg', '.txt')
 
@@ -70,6 +70,7 @@ def parse_args():
     parser.add_argument('-f', '--file', default='', type=str, help='Image file path')
     parser.add_argument('-s', '--sampling-step', default='auto', type=str, help='Sampling step')
     parser.add_argument('-w', '--write-file', default='', type=str, help='Generated file write path')
+    parser.add_argument('-a', '--aspect', default=2, type=float, help='Aspect of layout')
     args = parser.parse_args()
     return args
 

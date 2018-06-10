@@ -16,5 +16,5 @@ python ./img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 
 ## Samples
 <p align="center">
-    <img src=imgs/erke.jpg", width="800px">
+    <img src="imgs/kenan_screen.jpg", width="600px">
 </p>
