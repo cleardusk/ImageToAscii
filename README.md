@@ -28,8 +28,9 @@ python img_to_sacii.py -f imgs/erke.jpg -s "auto" -w out.txt
 </p>
 
 <p align="center">
-    <img src="imgs/erke_screen.jpg", width="800px">
+    <img src="imgs/chijing_screen.jpg", width="800px">
 </p>
+
 
 ## Notes
 You can adjust the font size of text editor for better view.
