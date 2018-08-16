@@ -24,12 +24,12 @@ def build_ascii(indices):
 
 def _convert_img_to_ascii(img, sampling_step='auto', aspect=2, norm_style='mean', eq_hist_flg=True):
     """
-    :param img: ndarray of an image
-    :param sampling_step: sampling ratio
-    :param aspect: samping ratio of height/width
-    :param norm_style: gray or mean
-    :param eq_hist_flg:
-    :return: ascii string
+    arguments:
+    img - ndarray of an image
+    sampling_step - sampling ratio
+    aspect - samping ratio of height/width
+    norm_style - gray or mean
+    eq_hist_flg - if to histogram equalization
     """
     sampling_step = img.shape[0] // 128 if sampling_step == 'auto' else int(sampling_step)
 

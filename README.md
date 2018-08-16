@@ -1,7 +1,8 @@
 ## Intro
-This is a simple, light and optimized image-to-ascii and ascii-to-image converter. It now support image and video.
+This is a simple, light and optimized **image-to-ascii** and **ascii-to-image** converter. It now supports image and video.
 
 ## 1. Image to Ascii
+This conversion is implemented by mapping the intensity of pixel to characters with different shape.
 ### Command option
 `-f | --file` is input image path.
 
@@ -36,10 +37,14 @@ python img_to_ascii.py -f imgs/erke.jpg -s "auto" -w out.txt
 You can adjust the font size of text editor for better view.
 
 ## 2. Ascii to Image
-
+It calls the text drawing API of `PIL` to implement the rendering of ascii text to image.
 ```
 python ascii_to_img.py -f imgs/kenan.txt -w imgs/kenan_ascii.jpg
 ```
+
 <p align="center">
-    <img src="imgs/kenan_ascii.jpg", width="600px">
+    <img src="imgs/kenan_ascii.jpg", width="500px">
 </p>
+
+## 3. Video conversion
+

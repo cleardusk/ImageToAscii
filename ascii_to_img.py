@@ -40,7 +40,7 @@ def _convert_ascii_to_img(ascii_str, font_path='fonts/Menlo-Regular.ttf'):
         print('Could not use chosen font. Using default.')
 
     # make the background image based on the combination of font and lines
-    pt2px = lambda pt: int(round(pt * 96.0 / 72))  # convert points to pixels
+    pt2px = lambda pt: int(round(pt * 96.0 / 72))  # _convert points to pixels
     max_width_line = max(lines, key=lambda s: font.getsize(s)[0])
     # max height is adjusted down because it's too large visually for spacing
     test_string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
