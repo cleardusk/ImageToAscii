@@ -17,7 +17,8 @@ def build_ascii(indices):
     s = ''
     h = indices.shape[0]
     for i in range(h):
-        s += res[i].tostring() + '\n'
+        # s += res[i].tostring().decode('ascii') + '\n'
+        s += ''.join(res[i].tolist()) + '\n'
     return s
 
 

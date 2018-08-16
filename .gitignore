@@ -1,0 +1,7 @@
+res/
+res~/
+videos/
+*.pyc
+__pycache__/
+.idea/
+.DS_Store
