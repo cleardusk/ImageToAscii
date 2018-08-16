@@ -50,6 +50,4 @@ python ascii_to_img.py -f imgs/kenan.txt -w imgs/kenan_ascii.jpg
 ```
 python ascii_art.py -f videos/kenan.mp4 -s 1 -e 360 -w res/kenan.gif -p 10 --step=10 --scale=0.25 --sampling-step=6
 ```
-<p align="center">
-    <img src="imgs/kenan.gif">
-</p>
+![kenan](imgs/kenan.gif)
